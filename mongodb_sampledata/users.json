@@ -1,0 +1,66 @@
+[{
+  "_id": {
+    "$oid": "637f56f755c62a1ba6db571b"
+  },
+  "firstName": "Lind",
+  "lastName": "Tan",
+  "idNum": 12034567,
+  "userName": "lind",
+  "email": "lind@gmail.com",
+  "password": "34567",
+  "bio": "",
+  "profileImg": "/images/dp/lind_dp.JPEG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637f576155c62a1ba6db571d"
+  },
+  "firstName": "Kait",
+  "lastName": "Tighe",
+  "idNum": 12067890,
+  "userName": "kaitie",
+  "email": "kaitie@gmail.com",
+  "password": "67890",
+  "bio": "",
+  "profileImg": "/images/dp/kaitie_dp.PNG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637f578055c62a1ba6db571f"
+  },
+  "firstName": "Charisse",
+  "lastName": "Valdez",
+  "idNum": 12012345,
+  "userName": "charisse",
+  "email": "charisse@gmail.com",
+  "password": "12345",
+  "bio": "",
+  "profileImg": "/images/dp/charisse_dp.PNG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637f57c955c62a1ba6db5721"
+  },
+  "firstName": "Jeremy",
+  "lastName": "Sancebuche",
+  "idNum": 12076543,
+  "userName": "mimiyuuuh",
+  "email": "mimiyuuuh@gmail.com",
+  "password": "itsyourgirl",
+  "bio": "",
+  "profileImg": "/images/dp/mimiyuuuh_dp.PNG",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637f57f355c62a1ba6db5723"
+  },
+  "firstName": "Nadine",
+  "lastName": "Lustre",
+  "idNum": 11912345,
+  "userName": "nadine",
+  "email": "nadine@gmail.com",
+  "password": "paraparaan",
+  "bio": "",
+  "profileImg": "/images/dp/nadine_dp.PNG",
+  "__v": 0
+}]

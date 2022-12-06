@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>DLSU Bids to Pick</title>    
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logos/logo_search.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        
+
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="register-bg">
+            <div class="signup-container">
+                <div class="register-title">
+                    <img src = "images/login/dlsu-logo.png" width="50" height="50" class="logocenter">
+                    <div class="register-title"> 
+                        Sign Up <hr>
+                    </div>
+                </div>
+                <form action="/signup" method="POST" >
+                    <%= registerPrompt%>
+                    <div class="userdetails">
+                        <div class="inputbox">
+                            <span class="inputdetails"> First Name </span>
+                            <input name="fname" type="text" placeholder="Enter First Name" required>
+                        </div>
+                        <div class="inputbox">
+                            <span class="inputdetails"> Last Name </span>
+                            <input name="lname" type="text" placeholder="Enter Last Name" required>
+                        </div>
+                        <div class="inputbox">
+                            <span class="inputdetails"> ID Number </span>
+                            <input name="idNum" type="number" placeholder="Enter ID Number"  min="10000000" max="99999999"required>
+                        </div>
+                        <div class="inputbox">
+                            <span class="inputdetails"> Username </span>
+                            <input name="username" type="text" placeholder="Enter Username" required>
+                        </div>
+                        <div class="inputbox">
+                            <span class="inputdetails"> Email </span>
+                            <input name="email" type="text" placeholder="Enter Email" required>
+                        </div>
+                        <div class="inputbox">
+                            <span class="inputdetails"> Password </span>
+                            <input name="pw1" type="password" placeholder="Enter Password" required>
+                        </div>
+                        <div class="inputbox">
+                            <span class="inputdetails"> Confirm Password </span>
+                            <input name="pw2" type="password" placeholder="Enter Password Again to Confirm" required>
+                        </div>
+                        <p>
+                            <div class="button">
+                                <input type="Submit" value="Register">
+                            </div>
+                        </p>
+                    </div>
+                </form>
+                <div class="inputdetails">
+                    <p> Already have an account? <a href="/"> Log In Here. </a> </p>
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

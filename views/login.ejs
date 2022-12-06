@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>DLSU Bids to Pick</title>        
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/logos/logo_search.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="register-bg">
+            <div class="login-container">
+                <div class="register-title"> 
+                    <img src = "images/login/dlsu-logo.png" width="50" height="50" class="logocenter">
+                    <div class="register-title"> 
+                        Log In <hr>
+                    </div>
+                </div>
+
+                <%=loginPrompt%>
+
+                <form action="/login" method="POST">
+                    <div class="userdetails">
+                        <div class="inputbox">
+                            <span class="inputdetails"> Email </span>
+                            <input name="email" type="text" placeholder="Enter Email" required>
+                        </div>
+                        <div class="inputbox">
+                            <span class="inputdetails"> Password </span>
+                            <input name="password" type="password" placeholder="Enter Password" required>
+                        </div>
+                        <div class="button">
+                            <p>
+                                <input type="Submit" value="Log In">
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            
+                Don't have an account? <a href="/signup"> Register here. </a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<%- include("partials/header") -%>
+    <div class="selling-container">
+        <div class="selling-frame">
+                <div class="selling-title">
+                    <p> Create a Bid Selling Post<hr> </p>
+            </div>    
+        </div>
+
+        <form action="/sell" method="POST" enctype="multipart/form-data">
+            <div class="userdetails">
+                    <div class="inputbox">
+                        <span class="inputdetails"> Attach Photo </span><br>
+                        <img id="preview" src="/images/logos/upload.png" alt="Please upload an item image" width="100" height="100">
+                        <%= imagePrompt %>
+                        <input 
+                            type="file"
+                            name="postImg"
+                            onchange="document.getElementById('preview').src = window.URL.createObjectURL(this.files[0])"
+                            enctype="multipart/form-data"
+                            accept=".jpg, .jpeg, .png, .jfif"
+                            required
+                        >
+                    </div>
+
+                    <div class="inputbox">
+                        <span class="inputdetails"> Add Title </span>
+                        <input name="itemName" type="text" placeholder="Enter Title of Listing" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="inputdetails"> Add Description </span>
+                        <input name="postDetails" type="text" placeholder="Enter Description of Listing" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="inputdetails"> Add Buy Out Price </span>
+                        <input name="buyOutPrice" type="number" placeholder="₱ 0.00" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="inputdetails"> Add Starting Bid </span>
+                        <input name="startingBid" type="number" placeholder="₱ 0.00" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="inputdetails"> Add Minimum Increment </span>
+                        <input name="minimumIncrement" type="number" placeholder="₱ 0.00" required>
+                    </div>
+                    <div class="inputbox">
+                       <span class="inputdetails"> Set End Date </span>
+                        <input name="endDate" type="date" placeholder="MM/DD/YYYY" required>
+                    </div>
+                    
+                    <div class="createbutton">
+                        <input type="submit" value="Create Post">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+<%- include("partials/footer") -%>

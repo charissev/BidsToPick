@@ -1,0 +1,715 @@
+:root{
+    --eerie-black: hsla(0, 0%, 9%, 1);
+    --ivory: hsla(52, 85%, 95%, 1);
+    --nyanza: hsla(80, 53%, 86%, 1);
+    --green-pantone: hsla(135, 59%, 41%, 1);
+    --dartmouth-green: hsla(152, 100%, 22%, 1);
+    font-family: 'Inter', serif;
+}
+
+.container-fluid{
+    font-family: 'Inter', serif;
+    color: var(--ivory);
+    position: fixed;
+    display: sticky;
+    max-height: 75px;
+    margin:0px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.navbarlogo{
+    height: 60px;
+    width: 60px;
+}
+
+.navbarlogo:hover {
+    color: var(--eerie-black);
+}
+
+input {
+    width: 100%;
+}
+
+.col {
+    margin: 5px;
+    padding: 5px;
+    max-height: 75px;
+    background-color: var(--green-pantone);
+    margin-left: auto; 
+    margin-right: 0;
+    text-align: left;
+    font-size: larger;
+}
+
+.bi {
+    color: var(--ivory);
+    font-style: normal;
+}
+
+.bi:hover {
+    color: var(--eerie-black);
+}
+
+/* The sidebar menu ---------------------------------------------------------------------------------*/
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    padding: 5px;
+    left: 0;
+    top: 75px;
+    background-color: var(--dartmouth-green);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    align-items: center;
+    font-family: 'Inter', serif;
+}
+
+.sidenav img {
+    border-style: solid;
+    border-radius: 50%;
+    border-color: var(--ivory);
+}
+
+  /* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--ivory);
+    display: block;
+    float: bottom;
+}
+  
+  /* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: var(--eerie-black);
+}
+
+.greenborder {
+    border-style: solid;
+    border-color: var(--dartmouth-green);
+    border-radius: 50%;
+}
+
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    margin-top: 75px;
+    padding: 0px 10px;
+    background-color: var(--ivory);
+    height: fit-content;
+    min-height: 100%;
+}
+
+.sidenav>h1 {
+    color: var(--ivory);
+    position: fixed;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+}
+
+.removed-hyperlink{
+    text-decoration: none;
+    color: var(--ivory);
+}
+
+.removed-hyperlink:hover{
+    color: var(--eerie-black);
+}
+
+
+/* Home Page Content ---------------------------------------------------------------------------------*/
+
+/* Main Header */
+#slideshow {
+    padding-top: 10px;
+    text-align: center;
+    overflow: hidden;
+    max-height: 1300px;
+}
+   
+.slide {
+    float: left;
+    max-width: 1300;
+    max-height: 600;
+}
+
+.slide-wrapper {
+    width: calc(1300px * 2);
+    animation: slide 12s ease infinite;
+}
+
+@keyframes slide {
+    20% {
+      margin-left: 0;
+    }
+    80% {
+      margin-left: calc(-1300px * 1);
+    }
+}
+
+.header-buttons {
+    text-align: center;
+    background-color: var(--green-pantone);
+    color: var(--ivory);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color:hsla(135, 59%, 41%, 1);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    opacity: 90%;
+    border: 2px solid;
+    border-color: var(--dartmouth-green);
+    border-radius: 0 0 5px 5px;
+    float: right;
+
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #3e8e41;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: var(--ivory);
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.search-result {
+    text-align: center;
+    background-color: var(--dartmouth-green);
+    color: var(--ivory);
+    z-index: 2;
+}
+
+/* Post */
+.posts-container {
+    width: 500px;
+    height: 750px;
+    background-color: var(--nyanza);
+    display: inline-table;
+    margin-top: 20px;
+    margin-left: 75px;
+    border-radius: 10px;  
+}
+
+.post-profile> .dropdown> .dropbtn> i {
+    color: var(--dartmouth-green);
+}
+
+.post-profile> .dropdown {
+    float: right;
+}
+
+.post-profile> .dropdown > .dropdown-content> a> i {
+    color: var(--dartmouth-green);
+}
+
+.post-profile> .dropdown> .dropbtn {
+    background-color: var(--nyanza);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.post-profile> .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: var(--nyanza);
+}
+
+.post {
+    background: var(--ivory);
+    justify-content: center;
+    font-family: 'Inter', serif;
+}
+
+.post-profile-frame {
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.post-profile img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+	width: 35px;
+	border: 1px solid;
+	border-radius: 100%;
+	border-color: var(--dartmouth-green);
+}
+
+.post-username {
+    font-family: 'Inter', serif;
+    font-size: larger;
+    margin: 5px;
+    display: inline;
+    text-decoration: none;
+    color: var(--ivory);
+}
+
+.post-username > a {
+    text-decoration: none;
+    color: var(--dartmouth-green);
+}
+
+.post-username > a:hover {
+    color: var(--green-pantone);
+}
+
+.post-settings {
+    width: 20px;
+    height: 20px;
+    align-self: right;
+    display: inline;
+}
+
+.post-hr {
+    border: 1px solid hsla(135, 59%, 41%, 1);
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+.post-time {
+    font-family: 'Inter', serif;
+    font-size: small;
+    margin-right: 15px;
+    padding-bottom: 1px;
+    color:hsla(152, 100%, 22%, 1);
+    font-style: italic;
+}
+
+.post-photo>img {
+    width: 500px;
+    height: 500px;
+}
+
+
+.post-price {
+    font-family: 'Inter', serif;
+    font-size: large;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-right: 15px;
+    color:hsla(152, 100%, 22%, 1);
+    font-weight: bolder;
+}
+
+.checked {
+    color: orange;
+}
+
+.post-like {
+    position:absolute;
+    display: flex;
+    margin-left: 220px;
+    margin-top: -28px;
+    background: transparent;
+    font-size: 25px;
+    color: grey;
+    border: none;
+
+}
+
+.post-likecount {
+    font-family: 'Inter', serif;
+    font-size: medium;
+    color:hsla(152, 100%, 22%, 1);
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-left: 454px;
+}
+
+.post-title {
+    font-family: 'Inter', serif;
+    font-size: large;
+    text-align: center;
+    color: var(--ivory);
+    background: hsla(152, 100%, 22%, 1);
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.post-description {
+    font-family: 'Inter', serif;
+    font-size: small;
+    margin-left: 22px;
+    margin-right:15px;
+    text-align: justify;
+    padding-top: 5px;
+}
+
+.post-commenttitle {
+    font-family: 'Inter', serif;
+    font-size: large;
+    margin-left: 15px;
+    margin-right: 15px;
+    color:hsla(152, 100%, 22%, 1);
+}
+
+.post-commentname {
+    font-family: 'Inter', serif;
+    font-size: small;
+    text-decoration: none;
+    color: var(--ivory);
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.post-comment {
+    font-family: 'Inter', serif;
+    font-size: small;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.post-commentcontainer {
+	max-width: 640px;
+	border-radius: 8px;
+    margin-left: 15px;
+    vertical-align: middle;
+}
+
+.post-makecomment {
+	transition: all 1s;
+    padding-bottom: 10px;
+}
+
+.post-commentclicked {
+	border: 1px solid #eee;
+	border-radius: 5px;
+}
+
+.post-commentcontainer textarea {
+	width: 97%;
+	background:hsla(52, 85%, 95%, 1);
+	border-radius: 5px 5px 0px 0px;
+	transition: all 0.5s;
+    margin-bottom: 10px;
+}
+
+button.primaryContained {
+	background:hsla(135, 59%, 41%, 1);
+	color: #fff;
+	padding: 10px 10px;
+	border: none;
+	cursor: pointer;
+	letter-spacing: 2px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 10px;
+	border-radius: 5px;
+}
+
+button.primaryContained:hover {
+	background:hsla(152, 100%, 22%, 1);
+}
+
+
+/* Profile Page Content ---------------------------------------------------------------------------------*/
+
+.profile-container {
+    padding-top: 10px;
+    margin-top: 10px;
+    width: 900px;
+    background-color: hsla(52, 85%, 95%, 1);
+}
+
+.profile {
+    background: var(--ivory);
+    justify-content: center;
+    font-family: 'Inter', serif;
+}
+
+.profile-hr {
+    border: 1px solid hsla(135, 59%, 41%, 1);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+.profile-listcount {
+    font-family: 'Inter', serif;
+    font-size: medium;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.profile-frame {
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.profile img {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+	width: 100px;
+	border: 2px solid;
+	border-radius: 50%;
+	border-color: var(--dartmouth-green);
+}
+
+/* Edit profile button */
+.profile-button { 
+    border-radius: 10px;
+    background-color: hsla(52, 85%, 95%, 1);
+    color: grey;
+    padding: 5px;
+    text-align: center;
+    font-size: medium;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: .5px solid;
+    border-color: grey;
+}
+
+.profile-username {
+    font-family: 'Inter', serif;
+    font-size: larger; 
+    margin: 10px;
+    display: inline;
+}
+
+.profile-username>a {
+    text-decoration: none;
+    color: var(--dartmouth-green);
+}
+
+.profile-username>a:hover {
+    color: var(--green-pantone);
+}
+
+.profile-fullname {
+    font-family: 'Inter', serif;
+    font-size: larger;
+    padding-left: 15px;
+}
+
+.profile-bio {
+    font-family: 'Inter', serif;
+    font-size: medium;
+    padding-left: 15px;
+}
+
+.profile-contact {
+    font-family: 'Inter', serif, ita;
+    font-size: medium;
+    padding-left: 15px;
+    display: inline;
+    color:hsla(152, 100%, 22%, 1);
+}
+
+.profile-post {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Sign up and Log In Page Content */
+.register-bg {
+
+    /* Add the blur effect */
+    /* filter: blur(3px);
+    -webkit-filter: blur(3px); */
+  
+    background-image: -webkit-linear-gradient(rgba(0,0,0, 0) 0%,rgba(0,0,0, 1) 100%), 
+    url(images/login/lasallehall-bg.jpeg);
+  
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+}
+  
+.logocenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.register-title {
+    font-family: 'Inter', serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.inputbox {
+    font-family: 'Inter', serif;
+    width: 100%;
+    padding: 3px;
+    outline: none;
+}
+
+.inputbox>img{
+    height: 300px;
+    width: 300px;
+}
+
+
+.inputdetails {
+    font-family: 'Inter', serif;
+    width: 70%;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.signup-container {
+    margin: 12% auto;
+    max-width: 500;
+    width: 90%;
+    height: 90%;
+    padding: 3px;
+    background-color:  #fdfae7ff;
+    padding: 25px 10px;
+    border-radius: 5px;
+    justify-content: center;
+}
+.login-container { 
+    margin: 12% auto;
+    max-width: 500;
+    width: 40%;
+    height: 55%;
+    padding: 25px 10px;
+    background-color: #fdfae7ff;
+    border-radius: 5px;
+
+}
+  
+.button {
+    width: 120px;
+    height: 30px;
+    align-items: center;
+    margin-top: 15px;
+    border: none;
+}
+
+
+.savebutton {
+    width: fit-content;
+    height: 30px;
+    align-items: center;
+    margin-top: 15px;
+    border: none;
+}
+
+
+/* Sell Page Content */
+
+.selling-container {
+    width: 500px;
+    height: 750px;
+    background-color: var(--nyanza);
+    display: inline-table;
+    margin-top: 100px;
+    margin-left: 200px;
+    border-radius: 10px;  
+}
+
+.selling-title {
+    font-family: 'Inter', serif;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color: var(--dartmouth-green);
+}
+
+.selling-frame {
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.createbutton {
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+}
+
+/* About Us Page Content ---------------------------------------------------------------------------------*/
+
+.about-container {
+    width: 500;
+    height: 750px;
+    margin-top: 20px;
+    border-radius: 10px;  
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.about {
+    background: var(--nyanza);
+    border-radius: 0 0 10px 10px;
+    font-family: 'Inter', serif;
+}
+
+.about-title {
+    font-family: 'Inter', serif;
+    font-size:x-large;
+    text-align: center;
+    color: var(--ivory);
+    background: var(--green-pantone);
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+.about-description {
+    font-family: 'Inter', serif;
+    font-size: small;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    
+}
+
+/* Bidding Rules Page Content ---------------------------------------------------------------------------------*/

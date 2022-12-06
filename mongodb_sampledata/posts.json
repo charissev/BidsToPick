@@ -1,0 +1,142 @@
+[{
+  "_id": {
+    "$oid": "637f5c4655c62a1ba6db5745"
+  },
+  "postedBy": "lind",
+  "posterImg": "/images/dp/lind_dp.JPEG",
+  "postImg": "/images/postimages/lind_5qul3p9fss.PNG",
+  "itemName": "Limited Edition AquaFlask 22oz",
+  "postDetails": "Brand New from their Stellar Collection",
+  "likes": 0,
+  "startingBid": 700,
+  "buyOutPrice": 800,
+  "minimumIncrement": 10,
+  "endDate": {
+    "$date": {
+      "$numberLong": "1672531200000"
+    }
+  },
+  "likers": [],
+  "comments": [
+    {
+      "commentedBy": "nadine",
+      "commentDetails": "750",
+      "_id": {
+        "$oid": "637f619155c62a1ba6db57ac"
+      }
+    },
+    {
+      "commentedBy": "kaitie",
+      "commentDetails": "mine 760",
+      "_id": {
+        "$oid": "637f61e055c62a1ba6db57b7"
+      }
+    },
+    {
+      "commentedBy": "charisse",
+      "commentDetails": "try 770",
+      "_id": {
+        "$oid": "637f621555c62a1ba6db57c1"
+      }
+    },
+    {
+      "commentedBy": "mimiyuuuh",
+      "commentDetails": "780",
+      "_id": {
+        "$oid": "637f624e55c62a1ba6db57cd"
+      }
+    },
+    {
+      "commentedBy": "nadine",
+      "commentDetails": "790!",
+      "_id": {
+        "$oid": "637f627455c62a1ba6db57db"
+      }
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637f5d0055c62a1ba6db5761"
+  },
+  "postedBy": "kaitie",
+  "posterImg": "/images/dp/kaitie_dp.PNG",
+  "postImg": "/images/postimages/kaitie_ov56b5c85li.JPEG",
+  "itemName": "Taylor Swift Folklore Signed CD",
+  "postDetails": "Sealed and Official bought from the Official Website",
+  "likes": 0,
+  "startingBid": 2200,
+  "buyOutPrice": 2500,
+  "minimumIncrement": 20,
+  "endDate": {
+    "$date": {
+      "$numberLong": "1675296000000"
+    }
+  },
+  "likers": [],
+  "comments": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637f5eae55c62a1ba6db5778"
+  },
+  "postedBy": "charisse",
+  "posterImg": "/images/dp/charisse_dp.PNG",
+  "postImg": "/images/postimages/charisse_gcaahyd539.JPEG",
+  "itemName": "Ariana Grande Positions Signed CD",
+  "postDetails": "Official and Sealed bought online from Panda CD Store",
+  "likes": 0,
+  "startingBid": 2250,
+  "buyOutPrice": 2400,
+  "minimumIncrement": 15,
+  "endDate": {
+    "$date": {
+      "$numberLong": "1677801600000"
+    }
+  },
+  "likers": [],
+  "comments": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637f5f8055c62a1ba6db578e"
+  },
+  "postedBy": "mimiyuuuh",
+  "posterImg": "/images/dp/mimiyuuuh_dp.PNG",
+  "postImg": "/images/postimages/mimiyuuuh_bycdrcw7j1.JPEG",
+  "itemName": "EXO Universe Album Kyungsoo \"Forehead\" Photocard",
+  "postDetails": "Indemand KPOP Photocard I pulled",
+  "likes": 0,
+  "startingBid": 700,
+  "buyOutPrice": 900,
+  "minimumIncrement": 50,
+  "endDate": {
+    "$date": {
+      "$numberLong": "1712620800000"
+    }
+  },
+  "likers": [],
+  "comments": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "637f615d55c62a1ba6db57a7"
+  },
+  "postedBy": "nadine",
+  "posterImg": "/images/dp/nadine_dp.PNG",
+  "postImg": "/images/postimages/nadine_vsbmn414by.PNG",
+  "itemName": "Harry Styles Official Live in Concert Tour Shirt",
+  "postDetails": "Bought this from his concert in MOA last May 1, 2018 ",
+  "likes": 0,
+  "startingBid": 750,
+  "buyOutPrice": 900,
+  "minimumIncrement": 10,
+  "endDate": {
+    "$date": {
+      "$numberLong": "1714867200000"
+    }
+  },
+  "likers": [],
+  "comments": [],
+  "__v": 0
+}]

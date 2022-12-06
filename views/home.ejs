@@ -1,0 +1,92 @@
+<%- include("partials/header") -%>
+<%- include("partials/slideshow") -%>
+
+    <% posts.forEach(function(indivpost){ %>
+        <div class="posts-container">
+            <div class="post-profile-frame">
+                <div class="post-profile">
+                    <img src = "<%= indivpost.posterImg%>">
+                    <div class="post-username">
+                        <a href="/profile/<%= indivpost.postedBy%>"><%= indivpost.postedBy%></a> 
+                    </div>
+        
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="bi bi-three-dots"></i></button>
+                        <div class="dropdown-content">
+                            <a href="/profile/<%= indivpost.postedBy%>"><i class="bi bi-box-arrow-left"> Go to User</i></a>
+                            <% if (session.userName == indivpost.postedBy){ %>
+                                <a href="/deletePost/<%= indivpost.id%>"><i class="bi bi-trash"> Delete Post</i></a> <!-- EDIT ME -->
+                            <% } %>
+                        </div>
+                    </div>
+        
+                </div>    
+            </div>
+            <div class="post-photo">
+                <img src="<%= indivpost.postImg%>"><!-- EDIT ME -->
+            </div>
+            <div class="post-title">
+                <%= indivpost.itemName%>
+            </div>
+            <div class="post-price">
+                Buyout Price: <img src="/images/logos/logo_peso.png" width="15px"> <%= indivpost.buyOutPrice%>
+            </div>
+        
+            <div class="post-likecount"><%= indivpost.likes%></div>
+            <div class="post-like">
+                <button class="post-like">
+
+                    <% isLiked = 0 %>
+                    <% indivpost.likers.forEach(function(liker){ %>
+                        <% if (liker.likerUserName == session.userName && isLiked != 1) { %>                            
+                                <a href="/unlikePost/<%= indivpost.id%>">
+                                    <i class="bi bi-suit-heart-fill" style="color: hsla(135, 59%, 41%, 1);"></i>
+                                </a>
+                                <% isLiked = 1 %>
+                        <% }%>
+                    <% }); %>
+
+                    <% if (isLiked == 0) { %>
+                        <a href="/likePost/<%= indivpost.id%>">
+                            <i class="bi bi-suit-heart-fill" style="color:grey"></i>
+                        </a>
+                    <% } %>
+
+                </button>
+            </div>
+        
+            <div class="post-description">
+                    <b>Starting Bid:</b> ₱ <%= indivpost.startingBid%><br>
+                    <b>Minimum Increment:</b> ₱ <%= indivpost.minimumIncrement%><br>
+                    <b>End Date:</b> <%= indivpost.endDate%><br>
+                    <b>DETAILS:</b> <%= indivpost.postDetails%><br>
+                <div class="post-hr"></div>
+                    <div class="post-commenttitle"><img src="/images/logos/logo_comment.png" width="20px">
+                         Comment Section
+                    </div>
+                    <% indivpost.comments.forEach(function(indivcomment){ %>
+                        <div class="post-comment">
+                            <a href="/profile/<%= indivcomment.commentedBy %>">@<%= indivcomment.commentedBy %></a>:
+                            <%= indivcomment.commentDetails %>
+                        </div>
+                    <% }); %>
+
+            </div>
+                    <section id="app">
+                        <div class="post-commentcontainer">
+                            <div class="post-makecomment">
+                                <p v-for="items in item" v-text="items"></p>
+                                    <form action="/comment/<%= indivpost.id%>" method="POST">
+                                        <input type="text" placeholder="Add Comment" name="commentDetails" style="min-height: 50px" required>
+                                        
+                                        <button v-on:click="addItem()" class='primaryContained float-right' type="submit">
+                                            ADD COMMENT
+                                        </button>
+                                    </form>
+                            </div>
+                        </div>
+                    </section>
+        </div>
+    <% }) %>
+    
+<%- include("partials/footer") -%>

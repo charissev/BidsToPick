@@ -1,0 +1,58 @@
+<%- include("partials/header") -%>
+    <div class="profile-container">
+        <div class="register-title">  
+            Edit Profile<hr>
+        </div>
+
+        <form action="/saveprofileedit" method="POST" enctype="multipart/form-data">
+            <div class="userdetails">
+                
+                <div class="inputbox">
+                        <img src="<%= session.dp %>" class="greenborder" id="preview"><br> 
+                    <span class="inputdetails"> Profile Picture </span><br>
+                    <input 
+                        type="file" 
+                        id="myFile" 
+                        name="profileImg" 
+                        enctype="multipart/form-data"
+                        onchange="document.getElementById('preview').src = window.URL.createObjectURL(this.files[0])"
+                        accept=".jpg, .jpeg, .png, .jfif"
+                    >
+                </div>
+
+                <div class="inputbox">
+                    <span class="inputdetails"> First Name </span>
+                    <input name="fname" type="text" value="<%= user.firstName%>">
+                </div>
+                <div class="inputbox">
+                    <span class="inputdetails"> Last Name </span>
+                    <input name="lname" type="text" value="<%= user.lastName%>">
+                </div>
+                <div class="inputbox">
+                    <span class="inputdetails"> Username </span>
+                    <input name="username" type="text" value="<%= user.userName%>">
+                </div>
+                <div class="inputbox">
+                    <span class="inputdetails"> Bio </span>
+                    <input name="bio" type="text" value="<%= user.bio%>">
+                </div>
+                <div class="inputbox">
+                    <span class="inputdetails"> Email </span>
+                    <input name="email" type="text" value="<%= user.email%>">
+                </div>
+                <div class="inputbox">
+                    <span class="inputdetails"> Password </span>
+                    <input name="pw1" type="password" value="<%= user.password%>">
+                </div>
+                <div class="inputbox">
+                    <span class="inputdetails"> Confirm Password </span>
+                    <input name="pw2" type="password" value="<%= user.password%>">
+                </div>
+                <%=profileEditPrompt%>
+                <div class="savebutton">
+                    <input type="submit" value="Save">
+                </div>
+            </div>
+        </form>
+    </div>
+<%- include("partials/footer") -%>

@@ -1,0 +1,4 @@
+These sample data files will be stored inside the dlsuBTPdb database from the MongoDB Compass application.
+- dlsuBTPdb.mySessions
+- dlsuBTPdb.posts
+- dlsuBTPdb.users
